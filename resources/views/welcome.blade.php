@@ -1,16 +1,21 @@
 @extends('layouts.app')
 
 @section('main')
-    <div id="installModal" class="modal">
+    <div id="installModal" class="modal d-none">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <span class="btn close">&times;</span>
             <p>Would you like to install our app for a better experience?</p>
-            <button id="installBtn">Install</button>
+            <button id="installBtn" class="btn btn-primary">Install</button>
         </div>
     </div>
 
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas aliquid eveniet distinctio quas omnis aut magnam,
     quia perferendis doloribus ducimus vero est, at facere, consequuntur quisquam soluta officiis ipsam nihil.
+
+    <hr>
+
+   
+
 @endsection
 
 @push('styles')

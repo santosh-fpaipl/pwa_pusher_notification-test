@@ -2,7 +2,7 @@
 
 @section('top')
 
-    <meta name="theme-color" content="#ea3941"/>
+    {{-- <meta name="theme-color" content="#ea3941"/>
     <meta name="description" content="Description of your app">
     <meta name="author" content="Author Name">
     <meta name="keywords" content="keyword1, keyword2, keyword3">
@@ -13,7 +13,7 @@
     
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     @yield('styles')
-    @livewireStyles()
+    @livewireStyles() --}}
 
 @endsection
 
@@ -29,8 +29,8 @@
 
 @section('bottom')
 
-    <link rel="preload" href="sw.js" as="script">
+    {{-- <link rel="preload" href="sw.js" as="script">
     @yield('scripts')
-    @livewireScripts()
+    @livewireScripts() --}}
 
 @endsection
