@@ -22,7 +22,7 @@ class PusherNotificationEvent implements ShouldBroadcast
      */
     public function __construct($message)
     {
-        $this->channel = 'Test-channel';
+        $this->channel = 'Test_channel';
         $this->message = $message;
     }
 
@@ -43,6 +43,6 @@ class PusherNotificationEvent implements ShouldBroadcast
      */
     public function broadcastAs(): string
     {
-        return 'Test-event';
+        return 'Test_event';
     }
 }

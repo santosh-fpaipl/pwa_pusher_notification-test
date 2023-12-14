@@ -2,7 +2,7 @@ import './bootstrap';
 import './register-sw';
 
 if (typeof window.Livewire !== 'undefined') {
-    window.Echo.channel('Test-channel').listen('.Test-event', (e) => {
+    window.Echo.channel('Test_channel').listen('.Test_event', (e) => {
         // Handle the event data here
         console.log(e.message);
         //const messageContainer = document.getElementById('messageContainer');

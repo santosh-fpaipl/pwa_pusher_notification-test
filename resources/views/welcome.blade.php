@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('main')
+@section('content')
     <div id="installModal" class="modal d-none">
         <div class="modal-content">
             <span class="btn close">&times;</span>

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PushController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,10 @@ Route::get('/', function () {
 Route::get('/refresh', function(){
     return view('refresh');
 })->name('refresh');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::post('/push', [PushController::class, 'push'])->name('push');
+	Route::post('/push_store', [PushController::class, 'store']);
+

@@ -1,5 +1,5 @@
 @extends('layouts.app')
 
-@section('main')
-<livewire:notification-bell />
+@section('content')
+    <livewire:notification-bell />
 @endsection
